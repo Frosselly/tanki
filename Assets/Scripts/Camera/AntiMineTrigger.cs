@@ -17,6 +17,10 @@ public class AntiMineTrigger : MonoBehaviour
     AntiTankMineController antiTankMineController;
     Rigidbody rb;
     Player player;
+    
+    [Header("Effects")]
+    [SerializeField] 
+    GameObject explosionPrefab;
 
     private void Awake()
     {
@@ -35,6 +39,8 @@ public class AntiMineTrigger : MonoBehaviour
             Destroy(otherGameObject);
             player.TakeDamage();
             antiTankMineController.CreateMine();
+            
+            CreateExplosionEffect(otherGameObject.transform.position);
         }
     }
 
@@ -49,5 +55,8 @@ public class AntiMineTrigger : MonoBehaviour
         rb.AddForce(Vector3.up * force, ForceMode.Impulse);
     }
 
-    
+    private void CreateExplosionEffect(Vector3 position)
+    {
+        Instantiate(explosionPrefab, position, Quaternion.identity);
+    }
 }
