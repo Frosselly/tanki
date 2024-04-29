@@ -5156,6 +5156,8 @@ MonoBehaviour:
   antiTankMineTag: ATMine
   minExplosionForce: 5000
   maxExplosionForce: 10000
+  explosionPrefab: {fileID: 1362701065016258435, guid: 9056c81c835524146a6fd117e2e0dcb1,
+    type: 3}
 --- !u!114 &636381489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16505,13 +16507,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881847972}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 1.8, z: 6.6}
+  m_LocalRotation: {x: -0, y: -0, z: -0.727806, w: 0.6857831}
+  m_LocalPosition: {x: 5.5, y: 6.9, z: 6.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -93.406}
 --- !u!1 &1884602146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100116, guid: 002e2a607f5b64c48be0b3b0d8b8bfdd,
